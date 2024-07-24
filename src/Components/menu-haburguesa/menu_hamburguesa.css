@@ -1,0 +1,83 @@
+:root {
+  --font1: 'Beiruti', sans-serif;
+  --font2: 'Delicious Handrawn', cursive;
+  --fon2: Delicious Handrawn;
+  --lineas: #ffc3d3c4;
+  --pink: #ffd6e4;
+  --red: #c20b2a;
+  --writting: rgb(63, 63, 63);
+  --white: #ffffff;
+  --background-lineas: linear-gradient(
+      to right,
+      #ffe1e162,
+      1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, #ffe1e165, 1px, transparent 1px);
+  --border: 2px dashed #c20b2aa2;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.menu-container {
+  position: relative;
+  display: none;
+}
+
+.menu-icon {
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+
+.menu-links {
+  border-radius: 20px;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  width: 250px;
+  background-color: var(--white);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+}
+
+.menu-links.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.menu-links > a {
+  color: var(--writting);
+  padding: 15px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-links > a:hover {
+  border-radius: 30px;
+  border: var(--border);
+}
+
+@media (max-width: 500px) {
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-icon {
+    width: 30px;
+    height: 30px;
+  }
+}

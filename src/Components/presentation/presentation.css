@@ -1,0 +1,116 @@
+:root {
+  --pink: #ffd6e4;
+  --red: #c20b2a;
+  --writing2: #633947;
+  --writting: rgb(63, 63, 63);
+  --white: #ffffff;
+  --font: Beiruti;
+  --border: 2px dashed #c20b2aa2;
+
+  --padding-xs: 5px;
+  --padding-s: 10px;
+  --padding-m: 20px;
+  --padding-l: 30px;
+  --padding-xl: 50px;
+
+  --background-lineas: linear-gradient(
+      to right,
+      #ffe1e162,
+      1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, #ffe1e165, 1px, transparent 1px);
+}
+.div-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: var(--border);
+}
+.div-images {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+.div-images > img {
+  padding: 2px;
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+.div-text {
+  margin: 26px;
+  position: relative;
+  z-index: 1;
+  background-color: #ffffff;
+  background-size: 8px 8px;
+  background-blend-mode: overlay;
+
+  color: black;
+  border-radius: 30px;
+  border: var(--border);
+  box-shadow: 0 0 0 6px var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h1-presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  position: relative;
+  color: black;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+.nuria {
+  color: var(--pink);
+  text-shadow: -1px 0 var(--red), 0 1px var(--red), 1px 0 var(--red),
+    0 -1px var(--red), -2px 2px 0 var(--red), 2px 2px 0 var(--red),
+    1px 1px var(--red), 2px 2px var(--red), 3px 3px var(--red),
+    4px 4px var(--red), 5px 5px var(--red);
+}
+.p-presentation {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .div-text {
+    height: 6em;
+  }
+  .h1-presentation {
+    font-size: 30px;
+  }
+  .p-presentation {
+    font-size: 10px;
+  }
+}
+@media (max-width: 350px) {
+  .h1-presentation {
+    font-size: 25px;
+  }
+  .div-text {
+    height: 6em;
+  }
+}

@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+:root {
+  --font1: 'Beiruti', sans-serif;
+  --font2: 'Delicious Handrawn', cursive;
+  --fon2: Delicious Handrawn;
+  --lineas: #ffc3d3c4;
+  --pink: #ffd6e4;
+  --red: #c20b2a;
+  --writting: rgb(63, 63, 63);
+  --white: #ffffff;
+  --background-lineas: linear-gradient(
+      to right,
+      #ffe1e162,
+      1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, #ffe1e165, 1px, transparent 1px);
+  --border: 2px dashed #c20b2aa2;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  background-image: linear-gradient(to right, #ffe1e162, 1px, transparent 1px),
+    linear-gradient(to bottom, #ffe1e165, 1px, transparent 1px);
+  background-size: 8px 8px;
+  font-family: var(--font1);
+  overflow-x: hidden;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*sobre mi*/
+.container-info {
+  margin: 30px;
+  width: 90%;
+  height: auto;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 30px;
+  border: var(--border);
+  box-shadow: 0 0 0 6px var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sobre-mi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.h2-sobremi {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  color: var(--pink);
+  text-shadow: -1px 0 var(--red), 0 1px var(--red), 1px 0 var(--red),
+    0 -1px var(--red), -2px 2px 0 var(--red), 2px 2px 0 var(--red),
+    1px 1px var(--red), 2px 2px var(--red), 3px 3px var(--red),
+    4px 4px var(--red), 5px 5px var(--red);
+}
+.div-parrafos {
+  margin-top: 20px;
+  text-align: center;
+  width: 50%;
+}
+.div-parrafos > p {
+  font-size: 12px;
+}
+
+/*habilidades*/
+.habilidades-container {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.iconos-container {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.h2-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.h2-habilidades {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  color: var(--pink);
+  text-shadow: -1px 0 var(--red), 0 1px var(--red), 1px 0 var(--red),
+    0 -1px var(--red), -2px 2px 0 var(--red), 2px 2px 0 var(--red),
+    1px 1px var(--red), 2px 2px var(--red), 3px 3px var(--red),
+    4px 4px var(--red), 5px 5px var(--red);
+}
+
+.image-container {
+  text-align: center;
+}
+.image-container img {
+  max-width: 40px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.image-title {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #333;
+}
+
+/*experiencia y estudios*/
+.contenido-experiencia,
+.contenido-estudios {
+  display: none;
+}
+
+.contenido-experiencia.active,
+.contenido-estudios.active {
+  display: block;
+}
+
+.container-dinamico {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  width: 90%;
+}
+.botones {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 50px;
+}
+.botones > button {
+  text-align: start;
+  cursor: pointer;
+  border: none;
+  font-family: var(--font1);
+  font-weight: 600;
+  background-color: rgba(102, 51, 153, 0);
+  font-size: 35px;
+  color: var(--pink);
+  text-shadow: -1px 0 var(--red), 0 1px var(--red), 1px 0 var(--red),
+    0 -1px var(--red), -2px 2px 0 var(--red), 2px 2px 0 var(--red),
+    1px 1px var(--red), 2px 2px var(--red), 3px 3px var(--red),
+    4px 4px var(--red), 5px 5px var(--red);
+}
+
+.contenido {
+  text-align: center;
+  width: 50%;
+}
+.h3-experiencia {
+  margin-top: 0;
+}
+.contenido-estudios > h3 {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.contenido-estudios > p {
+  font-size: 12px;
+  margin: 0;
+}
+.h3-cursando {
+  margin: 0;
+}
+.p-estudios3 {
+  margin: 0;
+}
+.boton-seleccionado {
+  opacity: 1;
+}
+
+.boton-no-seleccionado {
+  opacity: 0.5;
+}
+
+/*proyectos*/
+
+.h2-proyectos {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  color: var(--pink);
+  text-shadow: -1px 0 var(--red), 0 1px var(--red), 1px 0 var(--red),
+    0 -1px var(--red), -2px 2px 0 var(--red), 2px 2px 0 var(--red),
+    1px 1px var(--red), 2px 2px var(--red), 3px 3px var(--red),
+    4px 4px var(--red), 5px 5px var(--red);
+}
+#article-proyectos {
+  background-color: #ffffff;
+  color: black;
+  border-radius: 30px;
+  border: var(--border);
+  box-shadow: 0 0 0 6px var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contacto-container {
+  margin: 40px;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.img-telefono {
+  width: 70px;
+  height: 70px;
+}
+.h3-contacto {
+  text-align: start;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.h2-contacto {
+  margin-top: 10px;
+  font-size: 35px;
+  color: var(--pink);
+  text-shadow: -1px 0 var(--red), 0 1px var(--red), 1px 0 var(--red),
+    0 -1px var(--red), -2px 2px 0 var(--red), 2px 2px 0 var(--red),
+    1px 1px var(--red), 2px 2px var(--red), 3px 3px var(--red),
+    4px 4px var(--red), 5px 5px var(--red);
+}
+
+/*animaciones*/
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-hidden-left {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.animate-hidden-right {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.animate-slide-in-left {
+  animation: slideInFromLeft 0.7s forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInFromRight 1s forwards;
+}
+
+@media (max-width: 500px) {
+  .sobre-mi {
+    display: flex;
+    flex-direction: column;
+  }
+  .h2-sobremi {
+    margin: 0;
+    width: 100%;
+    font-size: 35px;
+  }
+  .div-parrafos {
+    margin-top: 5px;
+  }
+  .div-parrafos > p {
+    width: 100%;
+    font-size: 15px;
+  }
+  .habilidades-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .h2-habilidades {
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+  .container-dinamico {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .botones {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+  .botones > button {
+    font-size: 25px;
+  }
+  .contacto-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .h2-contacto {
+    font-size: 30px;
+  }
+  .img-telefono {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 310px) {
+  .h2-contacto {
+    font-size: 20px;
+  }
+  .h3-contacto {
+    font-size: 15px;
+  }
+}
