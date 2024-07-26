@@ -6,14 +6,14 @@ const proyectos = [
     titulo: 'Proyecto 1',
     descripcion:
       'Landing page de una tienda para practicar la estructura de los elementos en la aplicación y el responsive, solo con HTML y CSS',
-    enlace: 'https://github.com/nuriambb/Practicaa-Flex'
+    enlace: 'https://practicaflexgandinga.netlify.app/'
   },
   {
     imagen: './assets/bikinis2.png',
     titulo: 'Proyecto 2',
     descripcion:
       'Lading page de una tienda con HTML y CSS para practicar todo lo aprendido y empezar a añadir funcionalidades sencillas',
-    enlace: 'https://enlace-proyecto2.com'
+    enlace: 'https://dipsuitbikinispractica.netlify.app/'
   },
   {
     imagen: './assets/aventurarse2.png',
