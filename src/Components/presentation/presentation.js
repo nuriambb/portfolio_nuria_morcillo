@@ -5,10 +5,10 @@ export const crearPresentacion = () => {
   const divImages = document.createElement('div')
   divImages.className = 'div-images'
   const imageAssets = [
-    './dist/assets/aventurarse1.png',
-    './dist/assets/responsiveflex.png',
-    './dist/assets/bikinis1.png',
-    './dist/assets/pinterest1.png'
+    './assets/aventurarse1.png',
+    './assets/responsiveflex.png',
+    './assets/bikinis1.png',
+    './assets/pinterest1.png'
   ]
 
   imageAssets.forEach((src) => {

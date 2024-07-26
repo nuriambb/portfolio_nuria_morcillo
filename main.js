@@ -47,12 +47,12 @@ const crearHabilidades = () => {
   iconosContainer.className = 'iconos-container'
 
   const iconos = [
-    { src: './dist/assets/javascript.png', titulo: 'Java-script' },
-    { src: './dist/assets/css.png', titulo: 'CSS' },
-    { src: './dist/assets/visual-studio.png', titulo: 'Visual-Studio' },
-    { src: './dist/assets/github.png', titulo: 'GitHub' },
-    { src: './dist/assets/photoshop.png', titulo: 'PhotoShop' },
-    { src: './dist/assets/davinci.png', titulo: 'DaVinci' }
+    { src: './assets/javascript.png', titulo: 'Java-script' },
+    { src: './assets/css.png', titulo: 'CSS' },
+    { src: './assets/visual-studio.png', titulo: 'Visual-Studio' },
+    { src: './assets/github.png', titulo: 'GitHub' },
+    { src: './assets/photoshop.png', titulo: 'PhotoShop' },
+    { src: './assets/davinci.png', titulo: 'DaVinci' }
   ]
 
   iconos.forEach((icono) => {
@@ -228,7 +228,7 @@ const crearContacto = () => {
   containerTelefono.className = 'container-telefono'
   const imgtelefono = document.createElement('img')
   imgtelefono.className = 'img-telefono'
-  imgtelefono.src = './dist/assets/movil.png'
+  imgtelefono.src = './assets/movil.png'
 
   textoContacto.appendChild(h3contacto)
   textoContacto.appendChild(h2contacto)

@@ -9,7 +9,7 @@ export const createHeader = () => {
   a.href = '#sobre-mi'
   const logo = document.createElement('img')
   logo.className = 'letra-n'
-  logo.src = './dist/assets/nuriamorcillo.png'
+  logo.src = './assets/nuriamorcillo.png'
   logo.alt = 'letra n'
 
   a.appendChild(logo)

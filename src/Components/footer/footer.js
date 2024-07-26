@@ -12,7 +12,7 @@ export const crearFooter = () => {
   footerIconos.className = 'footer-iconos'
   const iconoCorreo = document.createElement('img')
   iconoCorreo.className = 'icono-correo'
-  iconoCorreo.src = 'dist/assets/email.png'
+  iconoCorreo.src = './assets/email.png'
   iconoCorreo.alt = 'Correo'
   iconoCorreo.addEventListener('click', () => {
     window.location.href = 'mailto:nuriamorcillo30@gmail.com'
@@ -20,7 +20,7 @@ export const crearFooter = () => {
 
   const iconoLinkedin = document.createElement('img')
   iconoLinkedin.className = 'icono.linkedin'
-  iconoLinkedin.src = 'dist/assets/linkedin.png'
+  iconoLinkedin.src = './assets/linkedin.png'
   iconoLinkedin.alt = 'LinkedIn'
   iconoLinkedin.addEventListener('click', () => {
     window.open('https://www.linkedin.com/in/nuriamorcillobonillo/', '_blank')
@@ -28,7 +28,7 @@ export const crearFooter = () => {
 
   const iconoGitHub = document.createElement('img')
   iconoGitHub.className = 'icono-github'
-  iconoGitHub.src = 'dist/assets/github.png'
+  iconoGitHub.src = './assets/github.png'
   iconoGitHub.alt = 'GitHub'
   iconoGitHub.addEventListener('click', () => {
     window.open('https://github.com/nuriambb', '_blank')

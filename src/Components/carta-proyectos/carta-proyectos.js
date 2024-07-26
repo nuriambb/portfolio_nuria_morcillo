@@ -2,28 +2,28 @@ import './carta-proyectos.css'
 
 const proyectos = [
   {
-    imagen: './dist/assets/practicaflexgandinga.png',
+    imagen: './assets/practicaflexgandinga.png',
     titulo: 'Proyecto 1',
     descripcion:
       'Landing page de una tienda para practicar la estructura de los elementos en la aplicación y el responsive, solo con HTML y CSS',
     enlace: 'https://github.com/nuriambb/Practicaa-Flex'
   },
   {
-    imagen: './dist/assets/bikinis2.png',
+    imagen: './assets/bikinis2.png',
     titulo: 'Proyecto 2',
     descripcion:
       'Lading page de una tienda con HTML y CSS para practicar todo lo aprendido y empezar a añadir funcionalidades sencillas',
     enlace: 'https://enlace-proyecto2.com'
   },
   {
-    imagen: './dist/assets/aventurarse2.png',
+    imagen: './assets/aventurarse2.png',
     titulo: 'Proyecto 3',
     descripcion:
       'Empezamos a poner en práctica JavaScript con funcionalidades como buscadores y filtros de productos. ',
     enlace: 'https://super-croquembouche-ea9b9e.netlify.app'
   },
   {
-    imagen: './dist/assets/pinterestasync.png',
+    imagen: './assets/pinterestasync.png',
     titulo: 'Proyecto 4',
     descripcion:
       'Funcionalidades con JavaScript junto con el uso de la API Unsplash para generar una réplica de pinterest con imágenes, autores y fechas totalmente dinámico. ',

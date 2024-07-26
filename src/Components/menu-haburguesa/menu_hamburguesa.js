@@ -6,7 +6,7 @@ export const createMenuHamburguesa = () => {
 
   const menuIcon = document.createElement('img')
   menuIcon.className = 'menu-icon'
-  menuIcon.src = './src/assets/menu1.png'
+  menuIcon.src = './assets/menu1.png'
   menuIcon.alt = 'Menú Hamburguesa'
 
   const divHambuguer = document.createElement('div')
